@@ -1,0 +1,76 @@
+body {
+    /* Remove white space on edge of page. */
+    margin: 0;
+    font-family: Roboto, monospace, Arial;
+}
+
+.header {
+    background-color: #1F2937;
+    padding: 1em 10%;
+}
+
+.left-container h2,
+.header .logo,
+button {
+    color: #F9FAF8;
+}
+
+.left-container h2 {
+    /* Remove h2 default margins.  */
+    margin: 0;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.header .logo {
+    font-size: 24px;
+}
+
+/* Remove default ul styling. */
+.header .links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove default underline on a styling. */
+.header .links a {
+    text-decoration: none;
+}
+
+.left-container p,
+.header .links a {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+/* Form elements don't inherit font settings. */
+button {
+    background-color: #3882F6;
+    /* Inherit font from body. */
+    font-family: inherit;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.header-top, .right-container{
+    margin-bottom: 4em;
+}
+
+/* Style bottom section of hero content. */
+.header-bottom{
+    display: flex;
+    gap: 2em;
+}
+
+
