@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,300&display=swap"
         rel="stylesheet">
-    <title>Odin Landing Page</title>
+    <title>Jeff O's Odin Journey</title>
 </head>
 
 <body>
@@ -19,14 +19,14 @@
         <div class="header-top">
             <div class="logo">Header Logo</div>
             <ul class="links">
-                <li><a href="">Link one</a></li>
-                <li><a href="">Link two</a></li>
-                <li><a href="">Link three</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <div class="header-bottom">
+        <div id="about" class="header-bottom">
             <div class="left-container">
-                <h2>This website is awesome</h2>
+                <h2>My Programming Journey</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis non minus, itaque culpa magnam
                     dolorum
                     enim a deserunt facilis assumenda impedit! Veniam quam expedita alias quasi? Eaque possimus
@@ -36,13 +36,20 @@
                 <button>Sign up</button>
             </div>
             <div class="right-container">
-                <img src="./images/colors-and-fonts.png" alt="Placeholder">
+                <figure>
+                    <img src="./images/journey.jpg" alt="Picture of a person with backpack on a roadside path.">
+                    <figcaption>
+                        <p>Life is a journey. No one knows where the path will lead but you have to keep going forward
+                            to find out.</p>
+                        <i>Photo by <a href="https://www.pexels.com/@sharefaith-491036/">Sharefaith</a></i>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </div>
 
-    <div class="info">
-        <h3>Some random information.</h3>
+    <div id="project" class="info">
+        <h3>Check out my projects!</h3>
         <div class="info-item-container">
             <div class="info-item">
                 <img src="./images/linux-logo.png" alt="Picture of the linux penguin logo.">
@@ -87,14 +94,29 @@
         </figure>
     </div>
 
-    <div class="call-to-action">
+    <div id="contact" class="call-to-action">
         <div class="sign-up">
             <div class="sign-up-info">
-                <p class="p-bold">Call to action! It's time!</p>
-                <p>Sign up for our product by clicking that button right over there!</p>
+                <p class="p-bold">Follow along in my programming journey!</p>
+                <p>Sign up for my newsletter by clicking that button right over there!</p>
             </div>
             <button>Sign up</button>
         </div>
+
+        <h3>Contact Form</h3>
+
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your journey!"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
     </div>
 
     <footer> Copyright &copy; Jeff O 2023</footer>
