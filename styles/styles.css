@@ -1,3 +1,8 @@
+html{
+    /* Smooth scrolling */
+    scroll-behavior: smooth;
+}
+
 body {
     /* Remove white space on edge of page. */
     margin: 0;
@@ -15,13 +20,29 @@ body {
 
 .left-container h2,
 .header .logo,
-button {
+button,
+form.contact-me input[type=submit] {
     color: #F9FAF8;
 }
 
+.header .logo img{
+    height: auto;
+    width: 50px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
 .info h3 {
-    /* Remove h3 default margins. */
     font-size: 36px;
+}
+
+.info h3,
+#contact>h4 {
+    /* Remove h3 default margins. */
     font-weight: 800;
     color: #1F2937;
     text-align: center;
@@ -58,7 +79,8 @@ button {
 }
 
 /* Form elements don't inherit font settings. */
-button {
+button,
+form.contact-me input[type=submit] {
     background-color: #3882F6;
     /* Inherit font from body. */
     font-family: inherit;
@@ -68,6 +90,12 @@ button {
     min-width: 125px;
     font-size: 18px;
     font-weight: 800;
+}
+
+button:hover,
+form.contact-me input[type=submit]:hover {
+    background-color: white;
+    color: #3882F6;
 }
 
 .header-top {
@@ -106,12 +134,13 @@ button {
     justify-content: flex-end;
 }
 
-.right-container img{
+.right-container img {
     max-width: 100%;
     height: auto;
 }
 
-.right-container figcaption, .right-container a{
+.right-container figcaption,
+.right-container a {
     color: white;
 }
 
@@ -122,13 +151,15 @@ button {
 .info img {
     border: 3px solid #3882F6;
     border-radius: 10px;
-    max-width: 200px;
-    max-height: 200px;
+    width: 200px;
+    height: 200px;
+    /* To keep aspect ration */
+    object-fit: cover;
 }
 
 .info-item-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 2em;
 }
@@ -137,6 +168,15 @@ button {
     text-align: center;
     /* Make image text same width of image */
     max-width: min-content;
+}
+
+.info-item-container a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.info-item-container img:hover{
+    border-color: #ffae00;
 }
 
 .quote {
@@ -153,51 +193,104 @@ button {
     quotes: none;
 }
 
-.right-container figure{
-    margin:0;
+.right-container figure {
+    margin: 0;
 }
 
-.quote figcaption{
+.quote figcaption {
     text-align: right;
     font-weight: 700;
 }
 
-.call-to-action{
+.call-to-action {
     padding: 5em 10%;
 }
 
-.sign-up{
+.sign-up {
     background-color: #3882F6;
     border-radius: 5px;
     padding: 3em 5%;
 }
 
-.call-to-action button{
+.call-to-action button,
+form.contact-me input[type=submit] {
     border: 2px solid white;
 }
 
-.sign-up-info p, .right-container figcaption p{
+.sign-up-info p,
+.right-container figcaption p {
     margin: 0;
     color: white;
 }
 
-.sign-up-info p{
+.sign-up-info p {
     font-size: 18px;
 }
 
-p.p-bold{
+p.p-bold {
     font-weight: 700;
     font-size: 20px;
 }
 
-.sign-up{
+.sign-up {
     display: flex;
     justify-content: space-between;
 }
 
-footer{
-    text-align: center;;
+footer {
+    text-align: center;
     background-color: #1F2937;
-    color: white; 
+    color: white;
     padding: 2em 0;
+}
+
+.sign-up {
+    margin-bottom: 5em;
+}
+
+/* Contact Form Styling */
+
+form.contact-me input[type=text],
+form.contact-me input[type=email],
+form.contact-me textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+form.contact-me textarea {
+    height: 200px;
+}
+
+form.contact-me {
+    border-radius: 5px;
+    background-color: #3882F6;
+    padding: 2em;
+    color: white;
+    font-weight: 700;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container h4 {
+    text-align: center;
+}
+
+form.contact-me input[type=submit] {
+    display: block;
+    margin: 0 auto;
+}
+
+form.contact-me h4 {
+    margin: 0;
+    padding: 0;
 }

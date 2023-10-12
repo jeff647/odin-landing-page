@@ -11,36 +11,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,300&display=swap"
         rel="stylesheet">
-    <title>Jeff O's Odin Journey</title>
+    <title>The Programming Journey</title>
 </head>
 
 <body>
     <div class="header">
         <div class="header-top">
-            <div class="logo">Header Logo</div>
+            <div class="logo"><img src="./images/logo.png" alt="Logo of Programming Journeyman">Journeyman</div>
             <ul class="links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#project">Projects</a></li>
+                <li><a href="#stories">Stories</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="">Blog</a></li>
             </ul>
         </div>
         <div id="about" class="header-bottom">
             <div class="left-container">
-                <h2>My Programming Journey</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis non minus, itaque culpa magnam
-                    dolorum
-                    enim a deserunt facilis assumenda impedit! Veniam quam expedita alias quasi? Eaque possimus
-                    accusantium
-                    ea?
+                <h2>The Programming Journey</h2>
+                <p>Everyone's programming journey is different. If you feel lost or are struggling come take a break and
+                    read other programmer's stories. We all start somewhere. It doesn't matter how far down the journey
+                    you are it's about having the resilience and the will to continue to grow! Come and tell us you're
+                    story!
                 </p>
-                <button>Sign up</button>
+                <button>Share your story</button>
             </div>
             <div class="right-container">
                 <figure>
                     <img src="./images/journey.jpg" alt="Picture of a person with backpack on a roadside path.">
                     <figcaption>
-                        <p>Life is a journey. No one knows where the path will lead but you have to keep going forward
-                            to find out.</p>
+                        <p>Life is a journey. No one knows where the path will lead but the only way to find out is to
+                            go forward.</p>
                         <i>Photo by <a href="https://www.pexels.com/@sharefaith-491036/">Sharefaith</a></i>
                     </figcaption>
                 </figure>
@@ -48,42 +48,37 @@
         </div>
     </div>
 
-    <div id="project" class="info">
-        <h3>Check out my projects!</h3>
+    <div id="stories" class="info">
+        <h3>Programmer's stories</h3>
         <div class="info-item-container">
-            <div class="info-item">
-                <img src="./images/linux-logo.png" alt="Picture of the linux penguin logo.">
-                <div class="info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime deleniti
-                    distinctio
-                    eligendi hic cupiditate? Inventore, voluptatibus eligendi? Dolorum illo error tempore, magnam nam
-                    veniam
-                    quis, maxime id vero at enim.</div>
-            </div>
-            <div class="info-item">
-                <img src="./images/linux-logo.png" alt="Picture of the linux penguin logo.">
-                <div class="info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime deleniti
-                    distinctio
-                    eligendi hic cupiditate? Inventore, voluptatibus eligendi? Dolorum illo error tempore, magnam nam
-                    veniam
-                    quis, maxime id vero at enim.</div>
-            </div>
-            <div class="info-item">
-                <img src="./images/linux-logo.png" alt="Picture of the linux penguin logo.">
-                <div class="info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime deleniti
-                    distinctio
-                    eligendi hic cupiditate? Inventore, voluptatibus eligendi? Dolorum illo error tempore, magnam nam
-                    veniam
-                    quis, maxime id vero at enim.</div>
-            </div>
-            <div class="info-item">
-                <img src="./images/linux-logo.png" alt="Picture of the linux penguin logo.">
-                <div class="info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime deleniti
-                    distinctio eligendi
-                    hic cupiditate? Inventore, voluptatibus eligendi? Dolorum illo error tempore, magnam nam veniam
-                    quis, maxime id
-                    vero at enim.</div>
-            </div>
+            <a href="">
+                <div class="info-item">
+                    <img src="./images/linux-logo.png" alt="Picture of the linux penguin logo.">
+                    <div class="info-text">Hear about our good friend Linux the penguin's story into programming!</div>
+                </div>
+            </a>
+            <a href="">
+                <div class="info-item">
+                    <img src="./images/corgi.jpg" alt="Picture of a corgi dog laying down and smiling.">
+                    <div class="info-text">Cody the Corgi had his struggles but now he is all smiles!</div>
+                </div>
+            </a>
+            <a href="">
+                <div class="info-item">
+                    <img src="./images/koala.jpg" alt="Picture of a koala bear sleeping on a tree.">
+                    <div class="info-text">Aww looks like Katie the koala bear had a long coding session. Let's be quiet
+                        while she sleeps.</div>
+                </div>
+            </a>
+            <a href="">
+                <div class="info-item">
+                    <img src="./images/polar-bear.jpg" alt="Picture of a polar bear waving.">
+                    <div class="info-text">Looks like Peter the polar bear wants your attention. Click him to hear his
+                        story!</div>
+                </div>
+            </a>
         </div>
+
     </div>
 
     <div class="quote">
@@ -103,22 +98,25 @@
             <button>Sign up</button>
         </div>
 
-        <h3>Contact Form</h3>
+        <h4>Got a suggestion? Or want to reach out? Let me know below by filling out the form below!</h4>
 
-        <form>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name">
+        <div class="form-container">
+            <form class="contact-me">
+                <h4>Contact Form</h4>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name or leave blank for anonymity">
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email or leave blank for anonymity">
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell me about your journey!"></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" name="message"
+                    placeholder="Say Hi! Any feedback or new ideas are welcome!"></textarea>
 
-            <input type="submit" value="Submit">
-        </form>
+                <input type="submit" value="Submit" disabled>
+            </form>
+        </div>
     </div>
-
     <footer> Copyright &copy; Jeff O 2023</footer>
 </body>
 
